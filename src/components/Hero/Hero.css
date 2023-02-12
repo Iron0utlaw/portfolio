@@ -1,0 +1,128 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tl:before {
+    content: "";
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.hero_text {
+    text-align: right;
+    padding-right: 5%;
+    height: fit-content;
+    transform: translateY(36vh);
+}
+
+#logo {
+    width: 70vw;
+    animation: fi 0.5s ease-in forwards 3s;
+}
+
+#logo path:nth-child(1) {
+    stroke-dasharray: 781px;
+    stroke-dashoffset: 781px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray: 518px;
+    animation: line-anim 2s ease forwards;
+    stroke-dashoffset: 518px;
+}
+
+#logo path:nth-child(3) {
+    stroke-dasharray: 565px;
+    animation: line-anim 2s ease forwards;
+    stroke-dashoffset: 565px;
+}
+
+#logo path:nth-child(4) {
+    stroke-dasharray: 590px;
+    animation: line-anim 2s ease forwards;
+    stroke-dashoffset: 590px;
+}
+
+#logo path:nth-child(5) {
+    stroke-dasharray: 518px;
+    animation: line-anim 2s ease forwards;
+    stroke-dashoffset: 518px;
+}
+
+#logo path:nth-child(6) {
+    stroke-dasharray: 307px;
+    stroke-dashoffset: 307px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(7) {
+    stroke-dasharray: 518px;
+    stroke-dashoffset: 518px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(8) {
+    stroke-dasharray: 219px;
+    stroke-dashoffset: 219px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(9) {
+    stroke-dasharray: 425px;
+    stroke-dashoffset: 425px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(10) {
+    stroke-dasharray: 580px;
+    stroke-dashoffset: 580px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(11) {
+    stroke-dasharray: 518px;
+    stroke-dashoffset: 518px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(12) {
+    stroke-dasharray: 291px;
+    stroke-dashoffset: 291px;
+    animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fi {
+    to {
+        fill: black;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .tl:before {
+        content: "Web Devloper";
+        font-size: 4rem;
+    }
+
+    #logo {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2E5D7;
+    font-family: 'Zubayr';
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+@font-face {
+    font-family: 'Zubayr';
+    src: local('Zubayr'), url(./assets/Zubayr.ttf) format('truetype');
+}

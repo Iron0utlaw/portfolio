@@ -1,0 +1,153 @@
+.heading {
+    background: #000000;
+    text-align: center;
+    padding: 42px 33% 59px 33%;
+    margin-top: 100px;
+}
+
+.heading h1 {
+    font-weight: 700;
+    font-size: 75px;
+    color: #F2E5D7;
+}
+
+.contact__options a {
+    color: black;
+}
+
+.contact__container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 30%;
+    padding-left: 15%;
+    padding-top: 146px;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact__option {
+    background: #000000;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+    color: #F2E5D7;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: #F2E5D7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid #000000;
+    resize: none;
+    color: #000000;
+}
+
+.contact__container button {
+    width: 200px;
+    height: 60px;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #F2E5D7;
+}
+
+.email h4:before {
+    content: "Email";
+}
+
+.what h4:before {
+    content: "WhatsApp";
+}
+
+.email h5:before {
+    content: "harsh.varshney.ug21@nsut.ac.in";
+}
+
+.what h5:before {
+    content: "+91-8130460678";
+}
+
+#contact {
+    height: 90vh;
+}
+
+@media screen and (max-width: 1190px) {
+    .heading {
+        padding: 5%;
+    }
+
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
+    .contact__option {
+        overflow: hidden;
+        width: 60vw;
+    }
+
+    form {
+        width: max-content;
+    }
+
+    .contact__container button {
+        width: 60vw;
+    }
+
+    .email h4:before {
+        content: "";
+    }
+
+    .what h4:before {
+        content: "";
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .email h5:before {
+        content: "";
+    }
+
+    .what h5:before {
+        content: "";
+    }
+}
